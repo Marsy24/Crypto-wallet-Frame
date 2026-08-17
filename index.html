@@ -11,7 +11,11 @@
     <header class="crypto-frame__header header">
       <div class="header__container container">
         <a href="/" class="header__link link">
-          <img src="" alt="" class="header__img img logo" />
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            class="header__img img logo"
+          />
         </a>
 
         <nav class="header__nav nav">
@@ -36,9 +40,9 @@
     </header>
 
     <main class="crypto-frame__main main">
-      <section class="main__hero hero">
-        <div class="hero__container container">
-          <div class="hero__main">
+      <section class="main__hero hero section-offset_large">
+        <div class="hero__container container flex">
+          <div class="hero__main flex">
             <h1 class="hero__title main-title">
               Open your first crypto wallet, right now!
             </h1>
@@ -71,33 +75,39 @@
             </a>
           </div>
 
-          <div class="hero__cards">
-            <div class="hero__savings savings-card">
-              <h2 class="savings-card__title">Savings</h2>
-              <p class="savings-card__sum">$2,380.00</p>
-            </div>
+          <div class="hero__visual">
+            <img src="./images/dashboard.png" alt="dashboard" class="hero__img img" />
 
-            <div class="hero__bills bills-card">
-              <div class="bills-card__wrapper">
-                <h2 class="bills-card__title">Split bills</h2>
-                <p class="bills-card__sum">$800.00</p>
+            <div class="hero__cards">
+              <div class="hero__card savings-card">
+                <h2 class="savings-card__title">Savings</h2>
+                <p class="savings-card__sum">$2,380.00</p>
+                <div class="savings-card__lines">
+                    <div class="savings-card__line"></div>
+                    <div class="savings-card__line"></div>
+                </div>
               </div>
 
-              <ul class="bills-card__list bills-card-list list flex">
-                <li class="bills-card-list__item">
-                  <img src="" alt="" class="bills-card-list__img img" />
-                </li>
-                <li class="bills-card-list__item">
-                  <img src="" alt="" class="bills-card-list__img img" />
-                </li>
-                <li class="bills-card-list__item">
-                  <img src="" alt="" class="bills-card-list__img img" />
-                </li>
-              </ul>
+              <div class="hero__card bills-card">
+                <div class="bills-card__wrapper">
+                  <h2 class="bills-card__title">Split bills</h2>
+                  <p class="bills-card__sum">$800.00</p>
+                </div>
+
+                <ul class="bills-card__list bills-card-list list flex">
+                  <li class="bills-card-list__item">
+                    <img src="./images/avatar-1.png" alt="personal avatar" class="bills-card-list__img img" />
+                  </li>
+                  <li class="bills-card-list__item">
+                    <img src="./images/avatar-2.png" alt="personal avatar" class="bills-card-list__img img" />
+                  </li>
+                  <li class="bills-card-list__item">
+                    <img src="./images/avatar-3.png" alt="personal avatar" class="bills-card-list__img img" />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <img src="/" alt="/" class="hero__img img" />
         </div>
       </section>
 
@@ -403,19 +413,29 @@
         </nav>
 
         <p class="footer__descr descr">
-            Vibrant is a Framer template made for SaaS companies.
+          Vibrant is a Framer template made for SaaS companies.
         </p>
 
         <form class="footer__form form">
-            <input class="form__input" type="text" name="question" id="question">
+          <input
+            class="form__input"
+            type="text"
+            name="question"
+            id="question"
+          />
 
-            <button class="form__button btn" type="submit">Send</button>
+          <button class="form__button btn" type="submit">Send</button>
         </form>
 
         <div class="footer__bottom footer-bottom">
-            <p class="footer-bottom__descr descr">Made by <span class="footer-bottom--violet">Marsy</span></p>
+          <p class="footer-bottom__descr descr">
+            Made by <span class="footer-bottom--violet">Marsy</span>
+          </p>
 
-            <p class="footer-bottom__descr descr">Font used in this template is from <span class="footer-bottom--violet">Font Share</span></p>
+          <p class="footer-bottom__descr descr">
+            Font used in this template is from
+            <span class="footer-bottom--violet">Font Share</span>
+          </p>
         </div>
       </div>
     </footer>
