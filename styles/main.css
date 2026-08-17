@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 50px;
+}
+
+.section-offset {
+    padding-block-start: 100px;
+}
+
+.section-offset_large {
+    padding-block-start: 120px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.as-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 4px 14px 0px #00000014;
+}
+
+.as-button_violet {
+    background-color: #965cff;
+}
+
+.logo {
+    width: 121px;
+}
+
+.main-title {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.46px;
+}
+
+.second-title {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.46px;
+}
+
+.third-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.crypto-frame {
+    position: relative;
+}
+
+.crypto-frame::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1200px;
+    height: 1001px;
+
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 24px;
+    padding-block-start: 24px;
+}
+
+.nav-list {
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-list__link {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.17px;
+}
+
+.hero__container {
+    flex-direction: column;
+    gap: 60px;
+}
+
+.hero__main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 522px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.hero__visual {
+    max-width: 1051px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.hero__card {
+    position: absolute;
+}
+
+.savings-card {
+    top: -10px;
+    right: -70px;
+
+    width: 250px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 22.58px 49.14px #0e11198a;
+}
+
+.bills-card {
+    bottom: 60px;
+    left: -10%;
+}
