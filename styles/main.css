@@ -291,3 +291,14 @@ p {
 .bills-card-list__item:last-child {
     left: -30%;
 }
+
+.teasers__container {
+    padding-block: 40px;
+    background-color: #000;
+}
+
+.teasers-list {
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
