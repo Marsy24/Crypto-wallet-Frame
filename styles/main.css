@@ -83,6 +83,10 @@ p {
     background-color: #965cff;
 }
 
+.as-button_color-black {
+    color: #000;
+}
+
 .logo {
     width: 121px;
 }
@@ -138,6 +142,10 @@ p {
     padding-block-start: 24px;
 }
 
+.nav {
+    color: #fff;
+}
+
 .nav-list {
     gap: 35px;
     align-items: center;
@@ -151,8 +159,11 @@ p {
 }
 
 .hero__container {
+    position: relative;
     flex-direction: column;
     gap: 60px;
+
+    overflow-x: hidden;
 }
 
 .hero__main {
@@ -163,6 +174,8 @@ p {
     max-width: 522px;
     margin-inline: auto;
     text-align: center;
+
+    color: #fff;
 }
 
 .hero__visual {
@@ -173,10 +186,32 @@ p {
 
 .hero__img {
     width: 100%;
+
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
 }
 
 .hero__card {
     position: absolute;
+    padding: 20px;
+    border-radius: 16px;
+
+    color: #262C3B;
+    background-color: #fff;
+}
+
+.hero__card-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.12px;
+}
+
+.hero__card-sum {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.4px;
 }
 
 .savings-card {
@@ -184,13 +219,75 @@ p {
     right: -70px;
 
     width: 250px;
-    padding: 20px;
-    border-radius: 16px;
-    background-color: #fff;
+    flex-direction: column;
+    gap: 10px;
     box-shadow: 0 22.58px 49.14px #0e11198a;
+}
+
+.savings-card::before {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 430px;
+    height: 100px;
+
+    background-image: url('../images/savings-card-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.savings-card__lines {
+    gap: 8px;
+}
+
+.savings-card__line {
+    height: 10px;
+    border-radius: 4px;
+    background-color: rgba(38, 44, 59, 0.11);
+}
+
+.savings-card__line:first-of-type {
+    width: 11px;
+}
+
+.savings-card__line:last-of-type {
+    width: 60px;
 }
 
 .bills-card {
     bottom: 60px;
-    left: -10%;
+    left: -11%;
+
+    width: 280px;
+    justify-content: space-between;
+}
+
+.bills-card__wrapper {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bills-card__title {
+    padding-block-start: 10px;
+}
+
+.bills-card-list {
+    position: relative;
+    left: 10%;
+    height: min-content;
+}
+
+.bills-card-list__item {
+    position: relative;
+}
+
+.bills-card-list__item:nth-child(2) {
+    left: -15%;
+}
+
+.bills-card-list__item:last-child {
+    left: -30%;
 }
