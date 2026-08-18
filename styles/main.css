@@ -21,6 +21,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
     margin: 0;
 }
@@ -114,6 +115,15 @@ p {
     font-size: 32px;
     font-weight: 400;
     line-height: 1.2;
+    letter-spacing: 0;
+
+    color: #252B3B;
+}
+
+.fourth-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3;
     letter-spacing: 0;
 
     color: #252B3B;
@@ -407,4 +417,64 @@ p {
     letter-spacing: 0;
 
     color: #fff;
+}
+
+.comments__container {
+    flex-direction: column;
+    gap: 75px;
+
+    text-align: center;
+}
+
+.comments-list {
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 15px;
+}
+
+.comment {
+    height: auto;
+
+    padding: 30px;
+
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texts-list {
+    flex-direction: column;
+    gap: 24px;
+
+    text-align: start;
+}
+
+.author {
+    gap: 10px;
+
+    align-items: center;
+
+    text-align: start;
+}
+
+.author__info {
+    flex-direction: column;
+    gap: 1px;
+}
+
+.author__img {
+    width: 44px;
+    height: 44px;
+}
+
+.author__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+.comment__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
 }
