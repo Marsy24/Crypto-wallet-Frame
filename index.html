@@ -4,48 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Crypto Wallet Frame</title>
   </head>
   <body class="crypto-frame">
     <header class="crypto-frame__header header">
       <div class="header__container container">
-        <a href="/" class="header__link link">
-          <img
-            src="./images/logo.svg"
-            alt="logo"
-            class="header__img img logo"
-          />
-        </a>
+        <article class="header__head head flex">
+          <a href="/" class="header__link link">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              class="header__img img logo"
+            />
+          </a>
 
-        <nav class="header__nav nav">
-          <ul class="nav__list nav-list list flex">
-            <li class="nav-list__item">
-              <a href="/" class="nav-list__link link"> Home </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="/" class="nav-list__link link uppercase"> faq </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="/" class="nav-list__link link"> Blog </a>
-            </li>
-            <li class="nav-list__item">
-              <a
-                href="/"
-                class="nav-list__link link as-button as-button_color-black"
-              >
-                Buy Template
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="header__nav nav">
+            <ul class="nav__list nav-list list flex">
+              <li class="nav-list__item">
+                <a href="/" class="nav-list__link link color-inverse"> Home </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="/" class="nav-list__link link color-inverse uppercase">
+                  faq
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="/" class="nav-list__link link color-inverse"> Blog </a>
+              </li>
+              <li class="nav-list__item">
+                <a
+                  href="/"
+                  class="nav-list__link link as-button color-secondary"
+                >
+                  Buy Template
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </article>
       </div>
     </header>
 
     <main class="crypto-frame__main main">
       <section class="main__hero hero section-offset_large">
         <div class="hero__container container flex">
-          <div class="hero__main flex">
+          <div class="hero__main flex color-inverse">
             <h1 class="hero__title main-title">
               Open your first crypto wallet, right now!
             </h1>
@@ -86,7 +91,7 @@
             />
 
             <div class="hero__cards">
-              <article class="hero__card savings-card flex">
+              <article class="hero__card savings-card color-primary flex">
                 <h2 class="savings-card__title hero__card-title">Savings</h2>
                 <p class="savings-card__sum hero__card-sum">$2,380.00</p>
                 <div class="savings-card__lines flex">
@@ -95,7 +100,7 @@
                 </div>
               </article>
 
-              <article class="hero__card bills-card flex">
+              <article class="hero__card bills-card color-primary flex">
                 <div class="bills-card__wrapper flex">
                   <h2 class="bills-card__title hero__card-title">
                     Split bills
@@ -172,7 +177,7 @@
           <ul class="advantages__list advantages-list list flex">
             <li class="advantages-list__item flex">
               <div class="advantages-list__wrapper flex">
-                <h3 class="advantages-list__title third-title">
+                <h3 class="advantages-list__title third-title color-primary">
                   Check out your monthly summary with a glance.
                 </h3>
                 <p class="advantages-list__descr descr">
@@ -189,7 +194,7 @@
             </li>
             <li class="advantages-list__item reversed flex">
               <div class="advantages-list__wrapper flex">
-                <h3 class="advantages-list__title third-title">
+                <h3 class="advantages-list__title third-title color-primary">
                   Control your expenses and save money.
                 </h3>
                 <p class="advantages-list__descr descr">
@@ -198,12 +203,12 @@
                 </p>
 
                 <ul
-                  class="advantages-list__teasers-list advantages-teasers-list list flex"
+                  class="advantages-list__teasers-list advantages-teasers-list list-icon list flex"
                 >
-                  <li class="advantages-teasers-list__item">
+                  <li class="advantages-teasers-list__item list-icon__item">
                     Molestie eget non libero viverra vitae nibh.
                   </li>
-                  <li class="advantages-teasers-list__item">
+                  <li class="advantages-teasers-list__item list-icon__item">
                     Aliquam in sollicitudin sem.
                   </li>
                 </ul>
@@ -217,7 +222,7 @@
             </li>
             <li class="advantages-list__item flex">
               <div class="advantages-list__wrapper flex">
-                <h3 class="advantages-list__title third-title">
+                <h3 class="advantages-list__title third-title color-primary">
                   Group bills? No problem, you can split it.
                 </h3>
                 <p class="advantages-list__descr descr">
@@ -240,12 +245,12 @@
         <div class="download__container container">
           <article class="download__content flex">
             <div class="download__left-content flex">
-              <h2 class="download__title second-title">
+              <h2 class="download__title second-title color-inverse">
                 Download the app and start today!
               </h2>
               <a
                 href="/"
-                class="download__link link as-button as-button_violet as-button_color-white"
+                class="download__link link as-button as-button_violet color-inverse"
               >
                 Buy Template
                 <svg
@@ -269,7 +274,9 @@
                   />
                 </svg>
               </a>
-              <p class="download__descr descr">*No credit card requires</p>
+              <p class="download__descr descr color-inverse">
+                *No credit card requires
+              </p>
             </div>
 
             <img
@@ -295,8 +302,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -318,8 +329,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -342,8 +357,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -365,8 +384,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -388,8 +411,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -418,8 +445,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -448,8 +479,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -478,8 +513,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -501,8 +540,12 @@
                     class="author__img img"
                   />
                   <div class="author__info flex">
-                    <h3 class="author__name third-title">Bryan Smith</h3>
-                    <h4 class="author__job-title fourth-title">CEO Frame</h4>
+                    <h3 class="author__name third-title color-primary">
+                      Bryan Smith
+                    </h3>
+                    <h4 class="author__job-title fourth-title color-primary">
+                      CEO Frame
+                    </h4>
                   </div>
                 </div>
                 <ul class="comment__texts-list texts-list list flex">
@@ -519,45 +562,91 @@
         </div>
       </section>
 
-      <section class="main__plans plans">
-        <div class="plans__container container">
-          <h2 class="plans__title second-title">Ready to get started?</h2>
+      <section class="main__plans plans section-offset_large">
+        <div class="plans__container container flex">
+          <div class="plans__header flex">
+            <h2 class="plans__title second-title">Ready to get started?</h2>
 
-          <p class="plans__descr descr">Choose a plan fits to your needs.</p>
+            <p class="plans__descr descr color-primary">
+              Choose a plan fits to your needs.
+            </p>
+          </div>
 
           <ul class="plans__list plans-list list flex">
             <li class="plans-list__item">
-              <article class="plans-list__plan plan plan_personal">
-                <h3 class="plan__title third-title">Personal</h3>
-                <p class="plan__descr descr">
-                  Best for brands that need designs on an ongoing basis.
-                </p>
+              <article
+                class="plans-list__plan plan plan_personal color-primary flex"
+              >
+                <div class="plan__header flex">
+                  <h3 class="plan__title third-title color-primary">
+                    Personal
+                  </h3>
+                  <p class="plan__descr descr">
+                    Best for brands that need designs on an ongoing basis.
+                  </p>
+                </div>
                 <p class="plan__price">$2.99</p>
-                <a href="/" class="plan__link link as-button">Try For Free</a>
+                <a
+                  href="/"
+                  class="plan__link link as-button as-button_violet color-inverse"
+                  >Try For Free</a
+                >
 
-                <ul class="plan__list plan-list list flex">
-                  <li class="plan-list__item">Request unlimited designs</li>
-                  <li class="plan-list__item">Deliverables as-you-need</li>
-                  <li class="plan-list__item">No limit on revisions</li>
+                <ul class="plan__list plan-list list-icon list flex">
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr descr">
+                      Request unlimited designs
+                    </p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr descr">
+                      Deliverables as-you-need
+                    </p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr descr">No limit on revisions</p>
+                  </li>
                 </ul>
               </article>
             </li>
             <li class="plans-list__item">
-              <article class="plans-list__plan plan plan_business">
-                <h3 class="plan__title third-title">Business</h3>
-                <p class="plan__descr descr">
-                  Best for brands that need designs on an ongoing basis.
-                </p>
+              <article
+                class="plans-list__plan plan plan_business color-inverse flex"
+              >
+                <div class="plan__header flex">
+                  <h3 class="plan__title third-title">Business</h3>
+                  <p class="plan__descr descr">
+                    Best for brands that need designs on an ongoing basis.
+                  </p>
+                </div>
                 <p class="plan__price">$8.99</p>
-                <a href="/" class="plan__link link as-button">Try For Free</a>
+                <a href="/" class="plan__link link as-button color-primary"
+                  >Try For Free</a
+                >
 
-                <ul class="plan__list plan-list list flex">
-                  <li class="plan-list__item">Request unlimited designs</li>
-                  <li class="plan-list__item">Deliverables as-you-need</li>
-                  <li class="plan-list__item">No limit on revisions</li>
-                  <li class="plan-list__item">No code needed</li>
-                  <li class="plan-list__item">Individual help center</li>
-                  <li class="plan-list__item">Your personal mentor</li>
+                <ul class="plan__list plan-list list-icon list flex">
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr descr">
+                      Request unlimited designs
+                    </p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr descr">
+                      Deliverables as-you-need
+                    </p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr descr">No limit on revisions</p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr">No code needed</p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr">Individual help center</p>
+                  </li>
+                  <li class="plan-list__item list-icon__item">
+                    <p class="plan-list__descr">Your personal mentor</p>
+                  </li>
                 </ul>
               </article>
             </li>
@@ -566,45 +655,58 @@
       </section>
     </main>
 
-    <footer class="crypto-frame__footer footer">
-      <div class="footer__container container">
-        <nav class="footer__nav nav">
-          <ul class="nav__list nav-list list flex">
-            <li class="nav-list__item">
-              <a href="/" class="nav-list__link link"> Home </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="/" class="nav-list__link link uppercase"> faq </a>
-            </li>
-            <li class="nav-list__item">
-              <a href="/" class="nav-list__link link"> Blog </a>
-            </li>
-          </ul>
-        </nav>
+    <footer class="crypto-frame__footer footer color-inverse">
+      <div class="footer__container container flex">
+        <article class="footer__head head flex">
+          <a href="/" class="header__link link">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              class="header__img img logo"
+            />
+          </a>
+
+          <nav class="header__nav nav">
+            <ul class="nav__list nav-list list flex">
+              <li class="nav-list__item">
+                <a href="/" class="nav-list__link link color-inverse"> Home </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="/" class="nav-list__link link color-inverse uppercase">
+                  faq
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a href="/" class="nav-list__link link color-inverse"> Blog </a>
+              </li>
+            </ul>
+          </nav>
+        </article>
 
         <p class="footer__descr descr">
           Vibrant is a Framer template made for SaaS companies.
         </p>
 
-        <form class="footer__form form">
+        <form class="footer__form form flex">
           <input
-            class="form__input"
+            class="form__input color-inverse"
             type="text"
-            name="question"
-            id="question"
+            name="mail user"
+            id="mail user"
+            placeholder="mail@mail.com"
           />
 
-          <button class="form__button btn" type="submit">Send</button>
+          <button class="form__button btn as-button as-button_violet color-inverse" type="submit">Send</button>
         </form>
 
-        <div class="footer__bottom footer-bottom">
+        <div class="footer__bottom footer-bottom flex">
           <p class="footer-bottom__descr descr">
-            Made by <span class="footer-bottom--violet">Marsy</span>
+            Made by <span class="color-accent">Marsy</span>
           </p>
 
           <p class="footer-bottom__descr descr">
             Font used in this template is from
-            <span class="footer-bottom--violet">Font Share</span>
+            <span class="color-accent">Font Share</span>
           </p>
         </div>
       </div>

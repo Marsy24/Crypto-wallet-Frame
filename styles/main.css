@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    min-width: 320px;
+    min-width: var(--container-min-width);
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 1.7;
@@ -28,23 +28,45 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin-inline: auto;
-    padding-inline: 50px;
+    padding-inline: var(--container-padding-inline);
 }
 
 .section-offset {
-    padding-block-start: 100px;
+    padding-block-start: var(--section-offset);
 }
 
 .section-offset_large {
-    padding-block-start: 120px;
+    padding-block-start: var(--section-offset-large);
 }
 
 .list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.list-icon__item {
+    position: relative;
+
+    padding-inline-start: 30px;
+}
+
+.list-icon__item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url('../images/list-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .link {
@@ -76,21 +98,32 @@ p {
     gap: 12px;
 
     padding: 10px 20px;
+
     border-radius: 12px;
     background-color: #fff;
     box-shadow: 0px 4px 14px 0px #00000014;
+
+    text-align: center;
 }
 
 .as-button_violet {
     background-color: #965cff;
 }
 
-.as-button_color-black {
-    color: #000;
+.color-primary {
+    color: var(--text-color-primary);
 }
 
-.as-button_color-white {
-    color: #fff;
+.color-secondary {
+    color: var(--text-color-secondary);
+}
+
+.color-inverse {
+    color: var(--text-color-inverse);
+}
+
+.color-accent {
+    color: var(--color-accent);
 }
 
 .logo {
@@ -116,8 +149,6 @@ p {
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0;
-
-    color: #252B3B;
 }
 
 .fourth-title {
@@ -125,8 +156,6 @@ p {
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0;
-
-    color: #252B3B;
 }
 
 .crypto-frame {
@@ -150,17 +179,14 @@ p {
     background-size: 100% auto;
 }
 
-.header__container {
-    display: flex;
+.head {
     justify-content: space-between;
     align-items: center;
-
-    padding-inline: 24px;
-    padding-block-start: 24px;
 }
 
-.nav {
-    color: #fff;
+.header__container {
+    padding-inline: 24px;
+    padding-block-start: 24px;
 }
 
 .nav-list {
@@ -191,8 +217,6 @@ p {
     max-width: 522px;
     margin-inline: auto;
     text-align: center;
-
-    color: #fff;
 }
 
 .hero__visual {
@@ -213,7 +237,6 @@ p {
     padding: 20px;
     border-radius: 16px;
 
-    color: #262C3B;
     background-color: #fff;
 }
 
@@ -356,27 +379,6 @@ p {
     gap: 10px;
 }
 
-.advantages-teasers-list__item {
-    position: relative;
-    padding-inline-start: 30px;
-}
-
-.advantages-teasers-list__item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-
-    width: 23px;
-    height: 23px;
-
-    background-image: url('../images/teasers-list-icon.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
 .download__content {
     padding-block-start: 95px;
     padding-inline-start: 80px;
@@ -406,17 +408,11 @@ p {
     max-width: 170px;
 }
 
-.download__title {
-    color: #fff;
-}
-
 .download__descr {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0;
-
-    color: #fff;
 }
 
 .comments__container {
@@ -477,4 +473,184 @@ p {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.18px;
+}
+
+.plans {
+    margin-block-end: 100px;
+}
+
+.plans__container {
+    flex-direction: column;
+    gap: 70px;
+}
+
+.plans__header {
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: center;
+}
+
+.plans__descr {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+
+.plans-list {
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-list {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan {
+    padding: 50px;
+
+    flex-direction: column;
+
+    border-radius: 24px;
+}
+
+.plan_personal {
+    max-width: 405px;
+
+    box-shadow: 0px 1.25px 2.21px 0px rgba(38, 44, 59, 0.02);
+}
+
+.plan_business {
+    max-width: 465px;
+
+    background-image: url('../images/business-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.plan__header {
+    flex-direction: column;
+    gap: 10px;
+
+    margin-block-end: 20px;
+}
+
+.plan__price {
+    display: inline-flex;
+    max-width: fit-content;
+
+    margin-block-end: 15px;
+}
+
+.plan__link {
+    margin-block-end: 25px;
+
+    justify-content: center;
+}
+
+.plan__title {
+    font-size: 39px;
+    letter-spacing: 0.3px;
+}
+
+.plan-list__descr {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+}
+
+.plan__price {
+    position: relative;
+
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+.plan__price::after {
+    content: "/mo";
+    position: absolute;
+    top: 35%;
+    right: -50px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+.plan_personal .plan__price::after {
+    color: rgba(38, 44, 59, 0.5);
+}
+
+.plan_business .plan__price::after {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__container {
+    padding-block: 100px;
+ 
+    flex-direction: column;
+
+    background-color: #000;
+}
+
+.footer__head {
+    margin-block-end: 24px;
+}
+
+.footer__descr {
+    margin-block-end: 40px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.16px;
+}
+
+.footer__form {
+    margin-block-end: 75px;
+}
+
+.form {
+    align-items: center;
+    gap: 10px;
+}
+
+.form__input {
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.form__button {
+    border: none;
+    outline: none;
+}
+
+.footer-bottom {
+    justify-content: space-between;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.13px;
+}
+
+.footer-bottom__descr {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.13px;
+}
+
+.footer-bottom__descr:last-of-type:not( span) {
+    color: #545454;
 }

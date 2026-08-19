@@ -1,0 +1,14 @@
+:root {
+    --text-color-primary: #252B3B;
+    --text-color-secondary: #2C313A;
+    --text-color-inverse: #fff;
+
+    --color-accent: #965CFF;
+
+    --container-width: 1200px;
+    --container-padding-inline: 50px;
+    --container-min-width: 320px;
+
+    --section-offset: 100px;
+    --section-offset-large: 120px;
+}
