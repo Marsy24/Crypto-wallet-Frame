@@ -7,49 +7,63 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <title>Crypto Wallet Frame</title>
   </head>
   <body class="crypto-frame">
-    <header class="crypto-frame__header header">
-      <div class="header__container container">
-        <article class="header__head head flex">
-          <a href="/" class="header__link link">
-            <img
-              src="./images/logo.svg"
-              alt="logo"
-              class="header__img img logo"
-            />
-          </a>
+    <article class="crypto-frame__hero-frame hero-frame">
+      <header class="hero-frame__header header">
+        <div class="header__container container">
+          <article class="header__head head flex">
+            <a href="/" class="header__link link">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="header__img img logo"
+              />
+            </a>
 
-          <nav class="header__nav nav">
-            <ul class="nav__list nav-list list flex">
-              <li class="nav-list__item">
-                <a href="/" class="nav-list__link link link_effect color-inverse"> Home </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="/" class="nav-list__link link link_effect color-inverse uppercase">
-                  faq
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="/" class="nav-list__link link link_effect color-inverse"> Blog </a>
-              </li>
-              <li class="nav-list__item">
-                <a
-                  href="/"
-                  class="nav-list__link link as-button color-secondary"
-                >
-                  Buy Template
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </div>
-    </header>
+            <nav class="header__nav nav">
+              <ul class="nav__list nav-list list flex">
+                <li class="nav-list__item">
+                  <a
+                    href="/"
+                    class="nav-list__link link link_effect color-inverse"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a
+                    href="/"
+                    class="nav-list__link link link_effect color-inverse uppercase"
+                  >
+                    faq
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a
+                    href="/"
+                    class="nav-list__link link link_effect color-inverse"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a
+                    href="/"
+                    class="nav-list__link link as-button color-secondary"
+                  >
+                    Buy Template
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </header>
 
-    <main class="crypto-frame__main main">
-      <section class="main__hero hero section-offset_large">
+      <section class="hero-frame__hero hero section-offset_large">
         <div class="hero__container container flex">
           <div class="hero__main flex color-inverse">
             <h1 class="hero__title title">
@@ -137,7 +151,9 @@
           </div>
         </div>
       </section>
+    </article>
 
+    <main class="crypto-frame__main main">
       <section class="main__teasers teasers">
         <div class="teasers__container container">
           <ul class="teasers__list teasers-list list flex">
@@ -670,15 +686,28 @@
           <nav class="header__nav nav">
             <ul class="nav__list nav-list list flex">
               <li class="nav-list__item">
-                <a href="/" class="nav-list__link link link_effect color-inverse"> Home </a>
+                <a
+                  href="/"
+                  class="nav-list__link link link_effect color-inverse"
+                >
+                  Home
+                </a>
               </li>
               <li class="nav-list__item">
-                <a href="/" class="nav-list__link link link_effect color-inverse uppercase">
+                <a
+                  href="/"
+                  class="nav-list__link link link_effect color-inverse uppercase"
+                >
                   faq
                 </a>
               </li>
               <li class="nav-list__item">
-                <a href="/" class="nav-list__link link link_effect color-inverse"> Blog </a>
+                <a
+                  href="/"
+                  class="nav-list__link link link_effect color-inverse"
+                >
+                  Blog
+                </a>
               </li>
             </ul>
           </nav>
@@ -697,7 +726,12 @@
             placeholder="mail@mail.com"
           />
 
-          <button class="form__button btn as-button as-button_violet color-inverse" type="submit">Send</button>
+          <button
+            class="form__button btn as-button as-button_violet color-inverse"
+            type="submit"
+          >
+            Send
+          </button>
         </form>
 
         <div class="footer__bottom footer-bottom flex">

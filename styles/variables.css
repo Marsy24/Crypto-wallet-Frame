@@ -10,5 +10,10 @@
     --container-min-width: 320px;
 
     --section-offset: 100px;
-    --section-offset-large: 120px;
+    --section-offset-large: clamp(4.0625rem, 2.3958rem + 8.3333vw, 7.5rem);;
+
+    --title-font-size: clamp(2rem, 1.5758rem + 2.1212vw, 2.875rem);
+    --third-title-font-size: clamp(1.625rem, 1.4886rem + 0.6818vw, 2rem);
+
+    --logo-width: clamp(6.5625rem, 6.1989rem + 1.8182vw, 7.5625rem);
 }

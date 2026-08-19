@@ -1,0 +1,11 @@
+@media (max-width: 980px) {
+    .hero__cards {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
